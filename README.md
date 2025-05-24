@@ -1,4 +1,8 @@
+Before start. Make sure:
 
+-Java 17 installed
+
+-Allure CLI installed 
 
 To start:
 1) Terminal: git clone https://github.com/vladlvl/imdb-qa.git
