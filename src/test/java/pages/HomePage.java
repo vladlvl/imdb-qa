@@ -6,6 +6,7 @@ import com.codeborne.selenide.*;
 
 import java.time.Duration;
 
+//selectors
 public class HomePage {
     private SelenideElement searchInput = $("[data-testid='suggestion-search']");
     private ElementsCollection searchResults = $$("ul[role='listbox'] li");

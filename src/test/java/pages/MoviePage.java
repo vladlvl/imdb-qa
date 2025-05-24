@@ -4,7 +4,6 @@ import static com.codeborne.selenide.Selenide.*;
 import static com.codeborne.selenide.Condition.*;
 import com.codeborne.selenide.*;
 
-import java.time.Duration;
 
 public class MoviePage {
     private ElementsCollection topCast = $$("section[data-testid='title-cast'] li");
@@ -19,7 +18,6 @@ public class MoviePage {
     public void verifyTopCastCount(int minCount) {
         topCast.shouldHave(CollectionCondition.sizeGreaterThan(minCount));
     }
-
 
     public String getActorName(int index) {
         return actorLinks.get(index).shouldBe(visible).getText();

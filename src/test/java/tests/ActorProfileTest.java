@@ -12,7 +12,6 @@ public class ActorProfileTest extends BaseTest {
         HomePage home = new HomePage();
         MoviePage movie = new MoviePage();
 
-
         home.openAndSearch("QA");
         home.clickFirstResult();
         String actorName = movie.getActorName(2);

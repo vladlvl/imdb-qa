@@ -11,6 +11,7 @@ public class CastVerificationTest extends BaseTest {
     public void verifyTopCastIsNotEmpty() {
         HomePage home = new HomePage();
         MoviePage movie = new MoviePage();
+
         home.openAndSearch("QA");
         home.clickFirstResult();
         movie.verifyTopCastCount(3);
