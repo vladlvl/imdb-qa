@@ -1,0 +1,30 @@
+plugins {
+    id 'java'
+    id 'io.qameta.allure' version '2.11.2'
+}
+
+group = 'com.example'
+version = '1.0-SNAPSHOT'
+
+sourceCompatibility = '17'
+targetCompatibility = '17'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    // Selenide
+    testImplementation 'com.codeborne:selenide:7.0.4'
+
+    // TestNG
+    testImplementation 'org.testng:testng:7.9.0'
+
+    // Allure
+    testImplementation 'io.qameta.allure:allure-testng:2.24.0'
+}
+
+test {
+    useTestNG()
+
+}
