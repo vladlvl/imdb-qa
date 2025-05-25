@@ -13,10 +13,6 @@ public class HomePage {
     private SelenideElement cookieBanner = $("[data-testid='accept-button']");
 
 
-    public void open() {
-        Selenide.open("https://www.imdb.com");
-    }
-
     public void search(String text) {
         searchInput.setValue(text);
     }
